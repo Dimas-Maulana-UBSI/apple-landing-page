@@ -51,7 +51,7 @@ li{
     display: flex;
     height: auto;
     width: auto;
-    list-style: none;
+    list-style: none;   
     font-size: 12px;
     font-weight: 400;
     /* background-color: blue; */
@@ -239,7 +239,7 @@ li img {
 .macbook {
     overflow: hidden;
     height: 580px;
-   background: 
+    background: 
     url("./asstes/air-m4.png"),
     linear-gradient(to bottom, #ddeef8 0%, #ffffff 100%);
     background-repeat: no-repeat,no-repeat;
@@ -329,7 +329,7 @@ li img {
     background-position: center 200px, center;
 }
 
-span{
+span.air{
     font-style: italic;
     color: blue;
 }
@@ -347,8 +347,8 @@ span{
 .item h1:has(img) {
     display: flex;
     align-items: center;          
-    font-size: 48px;       
-    font-weight: 600;
+    /* font-size: 48px;       
+    font-weight: 600; */
 }
 
 
@@ -366,4 +366,118 @@ span{
     /* background-size: contain, contain; */
     background-position: center , center;
     text-align: center;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: #f5f5f7;
+    align-items: center;
+    padding-top: 20px;
+    /* background-color: #0071e3; */
+}
+
+.container-footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+       "fnt"
+       "nav"
+       "cpy"
+       ;
+    width: 980px;
+    /* background-color: blue; */
+    color: white;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.container-footnote li{
+    font-size: 12px;
+    line-height: 1.3333733333;
+    font-weight: 400;
+}
+
+.foot-note {
+    grid-area: fnt;
+    /* background-color: red; */
+}
+
+.foot-note li{
+    color: rgba(0, 0, 0, 0.6); 
+    
+    font-size: 12px;
+    line-height: 1.3333733333;
+    font-weight: 400;
+}
+
+.foot-note ul{
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.link-footer{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: aqua; */
+    color: black;
+}
+
+.link-footer .nav1{
+    grid-area: nav1;
+    /* background-color:blue; */
+    color: black;
+}
+
+.link-footer div:has(ul){
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    
+}
+.link-footer ul{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.link-footer .nav2{
+    grid-area: nav2;
+    /* background-color: red; */
+}
+
+.link-footer ul li{
+    font-weight: 600;
+}
+.link-footer ul h1{
+    font-size: 12px;
+}
+.link-footer a{
+
+    color: rgba(0, 0, 0, 0.6); 
+    font-size: 12px; 
+    text-decoration: none; 
+}
+
+
+.copyright{
+    color: #000000;
+    grid-area: cpy;
+}
+
+.container-cpr{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 126px;
+    gap: 50px;
+    font-size: 12px;
+}
+.footer-bawah{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
